@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<title>Aplyca Test</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+    th {
+     background-color: #4CAF50;
+     color: white;
+    }
+</style>
+</head>
+<body>
+<h1>Bienvenidos Aplyca!</h1>
+<p>Para llevar a cabo la instalación de el servidor Web realicé los siguientes pasos:</br>
+1. <em>sudo apt-get update</em> para actualizar los repositorios.</br>
+2. <em>sudo apt-get install nginx</em> para instalar el servidor web.</br>
+3. <em>nginx -v</em> para comprobar que efectivamente se instaló Nginx y validar la versión.</p>
+
+<table style="width:100%">
+  <tr>
+    <th align="center">Sistema Operativo</th>
+    <td align="center"><em>hostnamectl</em></td>
+    <td align="center">Ubuntu 18.04.3 LTS</td>
+  </tr>
+  <tr>
+    <th align="center">Kernel</th>
+    <td align="center"><em>hostnamectl</em></td>
+    <td align="center">Linux 4.15.0-1051-aws</td>
+  </tr>
+  <tr>
+    <th align="center">RAM</th>
+    <td align="center"><em>free --giga</em></td>
+    <td align="center">1 GB</td>
+  </tr>
+  <tr>
+    <th align="center">IP Privada</th>
+    <td align="center"><em>ifconfig</em></td>
+    <td align="center">172.31.100.153</td>
+  </tr>
+  <tr>
+    <th align="center">IP Publica</th>
+    <td align="center"><em>curl ifconfig.co</em></td>
+    <td align="center">35.175.63.1</td>
+  </tr>
+  <tr>
+    <th align="center">CPU Info</th>
+    <td align="center"><em>less /proc/cpuinfo</em></td>
+    <td>
+      cpu family      : 6</br>
+      model name      : Intel(R) Xeon(R) CPU E5-2676 v3 @ 2.40GHz</br>
+      stepping        : 2</br>
+      microcode       : 0x43</br>
+      cpu MHz         : 2399.778</br>
+      cache size      : 30720 KB</br>
+      cpu cores       : 1</br>
+    </td>
+  </tr>
+  <tr>
+    <th align="center">Espacio en Disco</th>
+    <th align="center">Filesystem</th>
+    <th align="center">Size</th>
+    <th align="center">Used</th>
+    <th align="center">Avail</th>
+    <th align="center">Use%</th>
+  </tr>
+    <td align="center"><em>df -h</em></td>
+    <td align="center">/dev/xvda1</td>
+    <td align="center">30G</td>
+    <td align="center">1.6G</td>
+    <td align="center">28G</td>
+    <td align="center">6%</td>
+  </tr>
+</table>
+</body>
+</html>
